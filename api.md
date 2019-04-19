@@ -102,6 +102,49 @@ null
 ```
 
 
+* ```PUT /api/db``` Hacer un query a la base de datos
+
+**Parámetros**
+
+```javascript 
+{
+	"options": {
+		"tablename": "person"
+	}
+	"insert": {
+		"campo1": value1,
+		"campo2": value2,
+		"campo3": value3,
+		// ....
+	}
+}
+```
+
+* ```PUT /api/db/edit``` Hacer un query a la base de datos
+
+**Parámetros**
+
+```javascript 
+{
+	"options": {
+		"tablename": "person"
+	}
+	"query": {
+		// aquí es válido cualquier query valido para MongoDB
+		"xx": "xx"
+	},
+	"update": {
+		"campo1": value1,
+		"campo2": value2,
+		"campo3": value3,
+		// ....
+	}
+}
+```
+
+
+
+
 
 
 
